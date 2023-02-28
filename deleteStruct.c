@@ -6,7 +6,7 @@
 //
 void removeFromArray(Computer **arr, int *size, int index) {
     if (index < 0 || index >= *size) {
-        printf("Incorrect input!", *size);
+        printf("Incorrect input!");
         return;
     }
 

@@ -20,7 +20,7 @@ enum OperationSystem {
 
 typedef struct {
     char name[100];
-    float price;
+    int price;
     enum Purpose purpose;
     enum OperationSystem operationSystem;
     char CPU[50];
