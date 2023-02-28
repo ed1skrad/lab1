@@ -89,7 +89,7 @@ void sort(Computer * arr, int size) {
     for(int i = 0; i < count; i++) {
         int ss;
         printf("Choose sort type: ");
-        while(!scanf("%d", &ss) || ss < 0 || ss > 8) {
+        while(!scanf("%d", &ss) || ss < 0 || ss >= 8) {
             printf("Incorrect input!\n");
             rewind(stdin);
             printf("Choose second sort type: ");
