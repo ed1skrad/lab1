@@ -5,12 +5,11 @@
 int compareName(const Computer* a, const Computer* b) {
     return strcmp(a->name, b->name);
 }
-int comparePrice(const void *a, const void *b) {
-    Computer* compa = (Computer*)a;
-    Computer* compb = (Computer*)b;
-    if(compa->price<compb->price)
+
+int comparePrice(const Computer * a, const Computer * b) {
+    if(a->price<b->price)
         return -1;
-    else if(compa->price>compb->price)
+    else if(a->price>b->price)
         return 1;
     return 0;
 }
