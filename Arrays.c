@@ -17,7 +17,7 @@ void initStruct(Computer ** arr, int* sizeArr) {
 
     for(int i = 0; i < size; i++) {
         char name[100];
-        float price;
+        int price;
         int purpose;
         int operationSystem;
         char CPU[50];
@@ -46,9 +46,9 @@ void initStruct(Computer ** arr, int* sizeArr) {
         }
         printf("Enter number of cores:\n");
         numberOfCores = getInt();
-        printf("CPU");
+        printf("CPU:\n");
         scanf("%s", CPU);
-        printf("GPU");
+        printf("GPU\n");
         scanf("%s", GPU);
         (*arr)[i] = init(name, price,purpose,operationSystem,CPU,GPU,memoryValue,numberOfCores);
         printf("\n");

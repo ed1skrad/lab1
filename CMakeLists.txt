@@ -3,4 +3,4 @@ project(labstruct)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(labstruct main.c menu.c getter.c html.c allFunctions.h Initialization.c struct.h printStruct.c Arrays.c deleteStruct.c sortingFiled.c)
+add_executable(labstruct main.c menu.c getter.c allFunctions.h Initialization.c struct.h printStruct.c Arrays.c deleteStruct.c sortingFiled.c)

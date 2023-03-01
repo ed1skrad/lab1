@@ -34,8 +34,7 @@ void menu() {
                "2 - Output array\n"
                "3 - Sort by fields\n"
                "4 - Delete struct\n"
-               "5 - Parse HTML\n"
-               "6 - Exit\n"
+               "5 - Exit\n"
                "Your choice: ");
         int choice;
         while(!scanf("%d", &choice) || choice < 1 || choice > 6) {
@@ -64,9 +63,6 @@ void menu() {
                 if(checkArray(size))
                     break;
                 indexDelete(&computers, &size);
-                break;
-            case 5:
-                htmlParse(&computers,&size);
                 break;
             default:
                 if(size > 0) free(computers);
